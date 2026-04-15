@@ -1,0 +1,174 @@
+/* Reset بسيط */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #451313;
+  background-color: #f6f7fb;
+}
+
+body {
+  direction: rtl;
+  line-height: 1.6;
+  min-height: 100vh;
+  background-color: #270bb3
+}
+
+body,
+button {
+  font-family: inherit;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #132241 0%, #7f57ff 100%);
+  color: #fff;
+}
+
+header h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  background:rgb(rgb(92, 17, 17), green, blue)
+  border-bottom: 1px solid #e5e7f0;
+}
+
+nav a {
+  color: #5b8def;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: #3b5acd;
+}
+
+.hero {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(41, 59, 117, 0.08);
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  color: #4f5d77;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+section p {
+  color: #4f5d77;
+}
+
+#skills {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+#projects {
+  display: grid;
+  gap: 1rem;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+}
+
+.project img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.06);
+}
+
+button {
+  padding: 0.95rem 1.8rem;
+  border: none;
+  border-radius: 999px;
+  background-color: brown;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  background: #3b5acd;
+  transform: translateY(-1px);
+}
+
+footer {
+  text-align: center;
+  padding: 1.25rem 0;
+  color: #6b7280;
+}
+
+@media (min-width: 768px) {
+  nav {
+    gap: 2rem;
+  }
+
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
